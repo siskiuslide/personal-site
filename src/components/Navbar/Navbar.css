@@ -1,5 +1,27 @@
 .navbar {
   display: flex;
   flex-direction: row;
-  width: 100%;
+  margin-block: 0;
+  background-color: var(--amazongreen);
+}
+.navbar > li {
+  margin: 2em;
+  list-style: none;
+  text-decoration: none;
+  transition: all 100ms;
+}
+
+.navbar > li > a {
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+  font-size: 1.25em;
+}
+
+.navbar > li:hover {
+  color: black;
+  transform: translateY(0.2em);
+}
+.navbar > li > a:hover {
+  color: var(--bistrebrown);
 }
