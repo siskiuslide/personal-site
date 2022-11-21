@@ -1,0 +1,31 @@
+.welcome {
+  font-size: 5em;
+  font-weight: bold;
+  font-style: italic;
+  font-family: "Signika Negative";
+  display: flex;
+  margin-left: 20vw;
+  margin-top: 1em;
+  color: var(--bistrebrown);
+}
+
+.name {
+  font-size: 3em;
+  background: var(--amazongreen);
+  display: flex;
+  align-items: center;
+  color: white;
+  font-family: "Oswald";
+  padding-inline: 1em;
+  margin-left: 30vw;
+  margin-right: auto;
+  width: auto;
+}
+
+.nounSpan {
+  background: white;
+  margin-inline: 0.5em;
+  margin-block: 0.25em;
+  padding-inline: 0.5em;
+  color: var(--amazongreen);
+}
