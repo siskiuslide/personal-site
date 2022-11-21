@@ -5,17 +5,15 @@ import Navbar from "./components/Navbar/Navbar";
 
 function App() {
   return (
-    <div>
+    <BrowserRouter>
       <Navbar></Navbar>
-      <BrowserRouter>
-        <Route path="/home">
-          <Home></Home>
-        </Route>
-        <Route path="/coding"></Route>
-        <Route path="/motoring"></Route>
-        <Route path="/photography"></Route>
-      </BrowserRouter>
-    </div>
+      <Route path="/home">
+        <Home></Home>
+      </Route>
+      <Route path="/coding"></Route>
+      <Route path="/motoring"></Route>
+      <Route path="/photography"></Route>
+    </BrowserRouter>
   );
 }
 

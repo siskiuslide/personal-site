@@ -1,6 +1,7 @@
 :root {
-  background-color: rgb(228, 222, 222);
+  background-color: rgb(216, 210, 210);
   --amazongreen: #507255;
+  --amazongreenhover: #506955
   --middlegreen: #488b49;
   --bistrebrown: #573524;
 }
