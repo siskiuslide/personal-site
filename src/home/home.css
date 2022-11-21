@@ -9,17 +9,29 @@
   color: var(--bistrebrown);
 }
 
-.name {
+.about {
   font-size: 3em;
   background: var(--amazongreen);
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: left;
+  justify-content: flex-start;
   color: white;
   font-family: "Oswald";
-  padding-inline: 1em;
   margin-left: 30vw;
   margin-right: auto;
   width: auto;
+  border-radius: 5px;
+}
+
+.name {
+  margin-top: 0.5em;
+  padding-inline: 0.25em;
+}
+.location {
+  opacity: 0.6;
+  font-family: "Signika Negative";
+  margin-top: 0;
 }
 
 .nounSpan {
@@ -28,4 +40,24 @@
   margin-block: 0.25em;
   padding-inline: 0.5em;
   color: var(--amazongreen);
+}
+.introduction {
+  margin-inline: 5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.explainTag {
+  font-family: "Signika Negative";
+  font-size: 2em;
+  text-align: center;
+  margin-top: 3em;
+  color: var(--bistrebrown);
+}
+.text {
+  color: var(--bistrebrown);
+  text-align: justify;
+  width: 75%;
 }

@@ -1,6 +1,7 @@
 .navbar {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   margin-block: 0;
   height: 4em;
   background-color: var(--amazongreen);
