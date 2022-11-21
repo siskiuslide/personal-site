@@ -1,7 +1,11 @@
 :root {
-  background-color: rgb(216, 210, 210);
+  --background: rgb(216, 210,210);
   --amazongreen: #507255;
   --amazongreenhover: #506955
   --middlegreen: #488b49;
   --bistrebrown: #573524;
+  background-color: var(--background)
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@500&display=swap');
