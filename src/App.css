@@ -1,10 +1,13 @@
 :root {
-  --background: rgb(216, 210, 210);
+  --background: #fdf4e3;
+  --beigedarker: #d1b687;
   --liftedBackground: rgb(210, 200, 200);
   --amazongreen: #507255;
   --amazongreenhover: #506955;
   --middlegreen: #488b49;
   --bistrebrown: #573524;
+  --shadowblue: #8499b1;
+  --glaucousblue: #5c80bc;
   background-color: var(--background);
 }
 
