@@ -19,45 +19,39 @@
   color: white;
   font-family: "Oswald";
   margin-left: 30vw;
-  margin-right: auto;
-  width: auto;
+  width: 40vw;
   border-radius: 5px;
 }
 
 .name {
   margin-top: 0.5em;
   padding-inline: 0.25em;
+  margin-bottom: 0.25em;
 }
 .location {
   opacity: 0.6;
   font-family: "Signika Negative";
   margin-top: 0;
+  font-size: 0.75em;
+  margin-bottom: 0.25em;
+  margin-inline: 0.25em;
 }
 
 .nounSpan {
   background: white;
-  margin-inline: 0.5em;
+  margin-inline: 0.15em;
   margin-block: 0.25em;
-  padding-inline: 0.5em;
+  padding-inline: 0.1em;
   color: var(--amazongreen);
 }
-.introduction {
-  margin-inline: 5em;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 
-.explainTag {
+.cardFlex {
+  margin-inline: 5em;
+  margin-top: 4em;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: top;
   font-family: "Signika Negative";
-  font-size: 2em;
-  text-align: center;
-  margin-top: 3em;
-  color: var(--bistrebrown);
-}
-.text {
-  color: var(--bistrebrown);
-  text-align: justify;
-  width: 75%;
 }
