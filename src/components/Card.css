@@ -7,6 +7,7 @@
   text-align: center;
   background-color: var(--bistrebrown);
   color: white;
+  text-decoration: none;
 }
 
 .card:hover {
