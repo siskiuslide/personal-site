@@ -45,6 +45,11 @@
   color: var(--amazongreen);
 }
 
+.browse {
+  text-align: center;
+  font-size: 1.5em;
+  margin-top: 2em;
+}
 .cardFlex {
   margin-inline: 5em;
   margin-top: 4em;
