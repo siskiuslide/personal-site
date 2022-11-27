@@ -19,7 +19,7 @@
   color: white;
   font-family: "Oswald";
   margin-left: 30vw;
-  width: 40vw;
+  width: 45vw;
   border-radius: 5px;
 }
 
@@ -43,6 +43,7 @@
   margin-block: 0.25em;
   padding-inline: 0.1em;
   color: var(--amazongreen);
+  transition: all 100ms;
 }
 
 .browse {

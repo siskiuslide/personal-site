@@ -4,10 +4,23 @@ import "./home.css";
 import Card from "../components/Card";
 
 const Home = function () {
-  const [noun, setNoun] = useState(["Web Developer", "Photographer", "Motor Enthusiast"]);
+  const [noun, setNoun] = useState("Web Developer");
   const [arrowIcon, setArrowIcon] = useState("keyboard_arrow_down");
   const [showCards, setShowCards] = useState(false);
 
+  useEffect(() => {
+    setTimeout(() => {
+      if (noun == "Web Developer") {
+        setNoun("Photographer");
+      }
+      if (noun == "Photographer") {
+        setNoun("Motor Enthusiast");
+      }
+      if (noun == "Motor Enthusiast") {
+        setNoun("Web Developer");
+      }
+    }, 5000);
+  }, [noun]);
   const arrowHandler = function () {
     if (arrowIcon === "keyboard_arrow_down") {
       setArrowIcon("keyboard_arrow_up");
@@ -23,7 +36,7 @@ const Home = function () {
       <div className="welcome">Welcome!</div>
       <div className="about">
         <p className="name">
-          I'm Jake, a <span className="nounSpan">Web Developer</span>
+          I'm Jake, a <span className="nounSpan">{noun}</span>
         </p>
         <p className="location">
           <span className="material-icons" style={{ fontSize: "0.75em", paddingInline: "0.25em" }}>
