@@ -11,6 +11,11 @@ const Navbar = function (props) {
         </NavLink>
       </li>
       <li>
+        <NavLink to="/photography" activeClassName="activePage">
+          Photography
+        </NavLink>
+      </li>
+      <li>
         <NavLink to="/coding" activeClassName="activePage">
           Coding
         </NavLink>
@@ -18,11 +23,6 @@ const Navbar = function (props) {
       <li>
         <NavLink to="/motoring" activeClassName="activePage">
           Motoring
-        </NavLink>
-      </li>
-      <li>
-        <NavLink to="/photography" activeClassName="activePage">
-          Photography
         </NavLink>
       </li>
     </ul>
