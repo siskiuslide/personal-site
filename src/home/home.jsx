@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import "./home.css";
 import Card from "../components/Card";
 
@@ -7,28 +6,32 @@ const Home = function () {
   const [noun, setNoun] = useState("Web Developer");
   const [arrowIcon, setArrowIcon] = useState("keyboard_arrow_down");
   const [showCards, setShowCards] = useState(false);
+  const [browseClickedStyle, setBrowseClickedStyle] = useState();
 
   useEffect(() => {
     setTimeout(() => {
-      if (noun == "Web Developer") {
+      if (noun === "Web Developer") {
         setNoun("Photographer");
       }
-      if (noun == "Photographer") {
+      if (noun === "Photographer") {
         setNoun("Motor Enthusiast");
       }
-      if (noun == "Motor Enthusiast") {
+      if (noun === "Motor Enthusiast") {
         setNoun("Web Developer");
       }
     }, 5000);
   }, [noun]);
-  const arrowHandler = function () {
+
+  const browseHandler = function () {
     if (arrowIcon === "keyboard_arrow_down") {
       setArrowIcon("keyboard_arrow_up");
-      setShowCards(false);
+      setShowCards(true);
+      setBrowseClickedStyle({ marginTop: "2em" });
       return;
     } else {
       setArrowIcon("keyboard_arrow_down");
-      setShowCards(true);
+      setShowCards(false);
+      setBrowseClickedStyle({ marginTop: "5em" });
     }
   };
   return (
@@ -45,14 +48,26 @@ const Home = function () {
           Based in Warrington
         </p>
       </div>
-      <div className="browse" onClick={arrowHandler}>
+      <div className="browse" onClick={browseHandler} style={browseClickedStyle}>
         Browse my work <span className="material-icons">{arrowIcon}</span>
       </div>
-      {showCards == true ? (
+      {showCards === true ? (
         <div className="cardFlex">
-          <Card title="Coding" desc="View my projects" dest="/coding" background="shadowblue"></Card>
-          <Card title="Photography" desc="Browse galleries" dest="/Photography" background="middlegreen"></Card>
-          <Card title="Motoring" desc="Look at my motoring updates" dest="/Motoring" background="glaucousblue"></Card>
+          <Card title="Coding" desc="View my projects" dest="/coding" background="shadowblue" delay="50ms"></Card>
+          <Card
+            title="Photography"
+            desc="Browse galleries"
+            dest="/Photography"
+            background="middlegreen"
+            delay="150ms"
+          ></Card>
+          <Card
+            title="Motoring"
+            desc="Look at my motoring updates"
+            dest="/Motoring"
+            background="glaucousblue"
+            delay="250ms"
+          ></Card>
         </div>
       ) : (
         ""

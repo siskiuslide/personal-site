@@ -48,11 +48,17 @@
 
 .browse {
   text-align: center;
-  font-size: 1.5em;
-  margin-top: 2em;
+  font-size: 2em;
+  font-weight: 600;
+  font-family: "Signika negative";
+  font-style: italic;
+  margin-top: 5em;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 200ms;
+  cursor: pointer;
+  color: var(--bistrebrown);
 }
 .cardFlex {
   margin-inline: 5em;
@@ -60,7 +66,7 @@
 
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: top;
   font-family: "Signika Negative";
 }
