@@ -7,19 +7,23 @@ const Home = function () {
   const [arrowIcon, setArrowIcon] = useState("keyboard_arrow_down");
   const [showCards, setShowCards] = useState(false);
   const [browseClickedStyle, setBrowseClickedStyle] = useState();
+  const [nounTimeout, setNounTimeout] = useState(5000);
 
   useEffect(() => {
     setTimeout(() => {
       if (noun === "Web Developer") {
         setNoun("Photographer");
+        setNounTimeout(5000);
       }
       if (noun === "Photographer") {
         setNoun("Motor Enthusiast");
+        setNounTimeout(5000);
       }
       if (noun === "Motor Enthusiast") {
         setNoun("Web Developer");
+        setNounTimeout(60000);
       }
-    }, 5000);
+    }, nounTimeout);
   }, [noun]);
 
   const browseHandler = function () {
@@ -31,25 +35,55 @@ const Home = function () {
     } else {
       setArrowIcon("keyboard_arrow_down");
       setShowCards(false);
-      setBrowseClickedStyle({ marginTop: "5em" });
+      setBrowseClickedStyle({ marginTop: "4em" });
     }
   };
   return (
     <>
-      <div className="welcome">Welcome!</div>
-      <div className="about">
-        <p className="name">
-          I'm Jake, a <span className="nounSpan">{noun}</span>
-        </p>
-        <p className="location">
-          <span className="material-icons" style={{ fontSize: "0.75em", paddingInline: "0.25em" }}>
-            location_on
-          </span>
-          Based in Warrington
-        </p>
+      <div className="welcomeFlex">
+        <div className="side side-1">
+          <div className="welcome">Welcome!</div>
+          <div className="about">
+            <p className="name">
+              I'm Jake, a <span className="nounSpan">{noun}</span>
+            </p>
+            <p className="location">
+              <span className="material-icons" style={{ fontSize: "0.75em", paddingInline: "0.25em" }}>
+                location_on
+              </span>
+              Based in Warrington
+            </p>
+          </div>
+        </div>
+
+        <div className="side side-2">
+          <div className="introduction">
+            <div className="introText">
+              <p style={{ fontSize: "1.5em" }}>I'm a self-taught Web Developer.</p>
+              <p>I create useful and creative web experiences for others who share the same interests as me.</p>
+              <p>
+                Currently, I'm working on a React JS application designed to make project car ownership more
+                streamlined. Here is the github <a href="https://github.com/siskiuslide/Project-car-app">repo</a>.
+              </p>
+            </div>
+            <div className="contactSection">
+              <p className="contact">
+                <span className="material-icons">phone</span> 07778868073
+              </p>
+              <p className="contact">
+                <span className="material-icons">email</span> jakewhatling2002@gmail.com
+              </p>
+              <p className="contact"></p>
+            </div>
+          </div>
+        </div>
       </div>
+
       <div className="browse" onClick={browseHandler} style={browseClickedStyle}>
-        Browse my work <span className="material-icons">{arrowIcon}</span>
+        Browse my work{" "}
+        <span className="material-icons" style={{ marginInline: "1vw" }}>
+          {arrowIcon}
+        </span>
       </div>
       {showCards === true ? (
         <div className="cardFlex">

@@ -1,11 +1,28 @@
+.welcomeFlex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.side {
+  height: 55vh;
+}
+.side-1 {
+}
+.side-2 {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .welcome {
   font-size: 5em;
   font-weight: bold;
   font-style: italic;
   font-family: "Signika Negative";
   display: flex;
-  margin-left: 20vw;
   margin-top: 1em;
+  margin-left: 1vw;
   color: var(--bistrebrown);
 }
 
@@ -18,8 +35,9 @@
   justify-content: flex-start;
   color: white;
   font-family: "Oswald";
-  margin-left: 30vw;
-  width: 45vw;
+  margin-left: 5vw;
+  margin-top: 0.5em;
+  width: auto;
   border-radius: 5px;
 }
 
@@ -38,12 +56,36 @@
 }
 
 .nounSpan {
+  display: inline;
   background: white;
   margin-inline: 0.15em;
   margin-block: 0.25em;
   padding-inline: 0.1em;
   color: var(--amazongreen);
-  transition: all 100ms;
+  transition: all 300ms;
+}
+
+.introduction {
+  margin-block: auto;
+  margin-right: 2em;
+}
+
+.introText {
+  font-size: 1.05em;
+  padding-inline: 1vw;
+  color: var(--bistrebrown);
+}
+.contactSection {
+  margin-top: 1em;
+  justify-self: flex-end;
+}
+.contact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.contact > span {
+  margin-inline: 1vw;
 }
 
 .browse {
@@ -52,7 +94,9 @@
   font-weight: 600;
   font-family: "Signika negative";
   font-style: italic;
-  margin-top: 5em;
+  margin-top: 4em;
+  width: 20vw;
+  margin-inline: auto;
   display: flex;
   justify-content: center;
   align-items: center;
