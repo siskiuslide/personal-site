@@ -63,7 +63,14 @@ const Home = function () {
               <p>I create useful and creative web experiences for others who share the same interests as me.</p>
               <p>
                 Currently, I'm working on a React JS application designed to make project car ownership more
-                streamlined. Here is the github <a href="https://github.com/siskiuslide/Project-car-app">repo</a>.
+                streamlined. Here is the github
+                <a
+                  href="https://github.com/siskiuslide/Project-car-app"
+                  style={{ textDecoration: "none", color: "var(--glaucousblue)", fontWeight: 600 }}
+                >
+                  repo
+                </a>
+                .
               </p>
             </div>
             <div className="contactSection">
@@ -80,7 +87,7 @@ const Home = function () {
       </div>
 
       <div className="browse" onClick={browseHandler} style={browseClickedStyle}>
-        Browse my work{" "}
+        Browse my work
         <span className="material-icons" style={{ marginInline: "1vw" }}>
           {arrowIcon}
         </span>

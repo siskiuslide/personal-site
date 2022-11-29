@@ -73,6 +73,7 @@
 .introText {
   font-size: 1.05em;
   padding-inline: 1vw;
+  margin-top: 1vh;
   color: var(--bistrebrown);
 }
 .contactSection {
