@@ -1,6 +1,7 @@
 :root {
   --background: #fdf4e3;
-  --beigedarker: #d1b687;
+  --beigedarker: rgba(243, 229, 207, 0.856);
+
   --liftedBackground: rgb(210, 200, 200);
   --amazongreen: #507255;
   --amazongreenhover: #506955;
@@ -9,6 +10,11 @@
   --shadowblue: #8499b1;
   --glaucousblue: #5c80bc;
   background-color: var(--background);
+  /* testing colours*/
+  --beigedarkertest: rgba(252, 234, 207, 0.877);
+  --paleblue: #c6def9bc;
+  --palegreen: #afd2b48e;
+  --darkamazongreen: #2c4530;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");

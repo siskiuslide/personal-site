@@ -18,7 +18,7 @@
 }
 
 .center {
-  width: 15vw;
+  width: 25em;
 }
 
 .welcome {
@@ -27,7 +27,7 @@
   font-style: italic;
   font-family: "Signika Negative";
   display: flex;
-  margin-top: 1em;
+  margin-top: 2em;
   color: var(--bistrebrown);
 }
 
@@ -41,8 +41,9 @@
   color: white;
   font-family: "Oswald";
   margin-left: 2vw;
-  width: auto;
+  width: 675px;
   border-radius: 5px;
+  box-shadow: inset var(--background) 0px 0px 15px;
 }
 
 .name {
@@ -73,37 +74,37 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: 300px;
   background-size: contain;
   margin-inline: auto;
   border-radius: 50%;
-  border: 10px solid var(--amazongreen);
+  border: 10px solid white;
   background-image: url("../images/snakewoodlandselfie.jpg");
 }
 
 .introduction {
   margin-block: auto;
-  margin-right: 1em;
+  background: var(--palegreen);
+  border-radius: 10px;
+  box-shadow: inset var(--background) 0px 0px 15px;
 }
 
 .introText {
   font-size: 1.25em;
   margin-top: 1vh;
-  width: 80%;
+  width: 90%;
   color: var(--bistrebrown);
+  margin-left: 1vw;
 }
 
-.introText::after {
-  content: "";
-  display: inline;
-  position: relative;
-  width: 250px;
-  height: 270px;
-  background: var(--amazongreen);
-}
 .contactSection {
   margin-top: 1em;
+  margin-left: 1vw;
+  color: var(--bistrebrown);
+  font-size: 1.1em;
+  font-weight: 600;
+  letter-spacing: 0.5px;
   justify-self: flex-end;
 }
 .contact {
@@ -122,7 +123,7 @@
   font-family: "Signika negative";
   font-style: italic;
   margin-top: 3em;
-  width: 20vw;
+  width: 20em;
   margin-inline: auto;
   display: flex;
   justify-content: center;
@@ -135,9 +136,17 @@
   animation-delay: 4s;
   animation-iteration-count: infinite;
 }
+
+.browse:hover > span {
+  animation-name: rotate;
+  animation-duration: 500ms;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
 .cardFlex {
   margin-inline: 5em;
-  margin-top: 4em;
+  margin-top: -4em;
 
   display: flex;
   flex-direction: row;
@@ -146,9 +155,81 @@
   font-family: "Signika Negative";
 }
 
-@media screen and (max-width: 1920) {
+@media only screen and (min-width: 1921px) {
+  .welcomeFlex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4vh;
+    margin-inline: 6em;
+  }
+  .introduction {
+    max-width: 40em;
+  }
+
+  .cardFlex {
+    margin-inline: 30em;
+    justify-content: center;
+  }
 }
 
+@media only screen and (min-width: 1451px) {
+}
+
+@media only screen and (max-width: 1450px) {
+  .welcomeFlex {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    /* height: ; */
+  }
+  .welcome {
+    margin-top: 0;
+  }
+
+  .side {
+    height: auto;
+    width: 100%;
+    margin-block: none;
+  }
+  .side-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+  }
+  .about {
+    width: 800px;
+    margin-inline: 0;
+  }
+  .center {
+    margin-block: 50px;
+  }
+  .centerImage {
+    width: 400px;
+    height: 400px;
+  }
+
+  .side-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .introduction {
+    width: 800px;
+    margin-block: 0;
+  }
+
+  .browse {
+    width: 80%;
+    height: 100px;
+    padding-top: 100px;
+  }
+  .cardFlex {
+    margin-inline: 20px;
+  }
+}
 @keyframes browse {
   0% {
     margin-top: 3em;
@@ -158,5 +239,11 @@
   }
   20% {
     margin-top: 3em;
+  }
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(180deg);
   }
 }

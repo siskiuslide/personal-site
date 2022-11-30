@@ -4,7 +4,7 @@
   justify-content: center;
   margin-block: 0;
   height: 4em;
-  background-color: var(--glaucousblue);
+  background-color: var(--darkamazongreen);
 }
 .navbar > li {
   margin: 1em;
@@ -26,11 +26,12 @@
 .header > li:active {
   color: black;
   transform: translateY(0.3em);
-  border-bottom: 3px solid var(--glaucousblue);
+  border-bottom: 3px solid var(--palegreen);
 }
 
 li > a.activePage {
 }
 .activePage {
-  color: var(--bistrebrown) !important;
+  border-bottom: 3px solid var(--palegreen);
+  color: white !important;
 }

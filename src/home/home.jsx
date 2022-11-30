@@ -30,12 +30,12 @@ const Home = function () {
     if (arrowIcon === "keyboard_arrow_down") {
       setArrowIcon("keyboard_arrow_up");
       setShowCards(true);
-      setBrowseClickedStyle({ marginTop: "1.5em", fontSize: "2em", animationDuration: "2s" });
+      setBrowseClickedStyle({ transform: "translateY(-4em)", fontSize: "2em", animationIterationCount: "0" });
       return;
     } else {
       setArrowIcon("keyboard_arrow_down");
       setShowCards(false);
-      setBrowseClickedStyle({ marginTop: "3em", fontSize: "2.5em", animationDuration: "0s" });
+      setBrowseClickedStyle({ marginTop: "3em", fontSize: "2.5em", animationIterationCount: "infinite" });
     }
   };
   return (
@@ -62,7 +62,10 @@ const Home = function () {
           <div className="introduction">
             <div className="introText">
               <p style={{ fontSize: "1.5em" }}>I'm a self-taught Web Developer.</p>
-              <p>I create useful and creative web experiences for others who share the same interests as me.</p>
+              <p>
+                I create <b>useful</b> and <b>creative</b> web experiences for others who share the same interests as
+                me.
+              </p>
               <p>
                 Currently, I'm working on a React / NodeJS application designed to make project car ownership more
                 streamlined. Here is the github{" "}
@@ -96,12 +99,12 @@ const Home = function () {
       </div>
       {showCards === true ? (
         <div className="cardFlex">
-          <Card title="Coding" desc="View my projects" dest="/coding" background="shadowblue" delay={200}></Card>
+          <Card title="Coding" desc="View my projects" dest="/coding" background="glaucousblue" delay={200}></Card>
           <Card
             title="Photography"
             desc="Browse galleries"
             dest="/Photography"
-            background="middlegreen"
+            background="shadowblue"
             delay={400}
           ></Card>
           <Card
