@@ -10,14 +10,15 @@ const Navbar = function (props) {
           Home
         </NavLink>
       </li>
-      <li>
-        <NavLink to="/photography" activeClassName="activePage">
-          Photography
-        </NavLink>
-      </li>
+
       <li>
         <NavLink to="/coding" activeClassName="activePage">
           Coding
+        </NavLink>
+      </li>
+      <li>
+        <NavLink to="/photography" activeClassName="activePage">
+          Photography
         </NavLink>
       </li>
       <li>

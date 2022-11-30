@@ -7,7 +7,7 @@ const Card = function (props) {
   const fadeIn = function () {
     setTimeout(() => {
       setCardStyle({ ...cardStyle, opacity: 1 });
-    }, 100);
+    }, props.delay);
   };
   useEffect(fadeIn, []);
   return (
