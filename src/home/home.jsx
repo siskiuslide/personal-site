@@ -30,12 +30,12 @@ const Home = function () {
     if (arrowIcon === "keyboard_arrow_down") {
       setArrowIcon("keyboard_arrow_up");
       setShowCards(true);
-      setBrowseClickedStyle({ marginTop: "2em" });
+      setBrowseClickedStyle({ marginTop: "1.5em", fontSize: "2em", animationDuration: "2s" });
       return;
     } else {
       setArrowIcon("keyboard_arrow_down");
       setShowCards(false);
-      setBrowseClickedStyle({ marginTop: "4em" });
+      setBrowseClickedStyle({ marginTop: "3em", fontSize: "2.5em", animationDuration: "0s" });
     }
   };
   return (
@@ -55,15 +55,17 @@ const Home = function () {
             </p>
           </div>
         </div>
-
+        <div className="center">
+          <div className="centerImage"></div>
+        </div>
         <div className="side side-2">
           <div className="introduction">
             <div className="introText">
               <p style={{ fontSize: "1.5em" }}>I'm a self-taught Web Developer.</p>
               <p>I create useful and creative web experiences for others who share the same interests as me.</p>
               <p>
-                Currently, I'm working on a React JS application designed to make project car ownership more
-                streamlined. Here is the github
+                Currently, I'm working on a React / NodeJS application designed to make project car ownership more
+                streamlined. Here is the github{" "}
                 <a
                   href="https://github.com/siskiuslide/Project-car-app"
                   style={{ textDecoration: "none", color: "var(--glaucousblue)", fontWeight: 600 }}
@@ -94,20 +96,20 @@ const Home = function () {
       </div>
       {showCards === true ? (
         <div className="cardFlex">
-          <Card title="Coding" desc="View my projects" dest="/coding" background="shadowblue" delay="50ms"></Card>
+          <Card title="Coding" desc="View my projects" dest="/coding" background="shadowblue" delay={200}></Card>
           <Card
             title="Photography"
             desc="Browse galleries"
             dest="/Photography"
             background="middlegreen"
-            delay="150ms"
+            delay={400}
           ></Card>
           <Card
             title="Motoring"
             desc="Look at my motoring updates"
             dest="/Motoring"
             background="glaucousblue"
-            delay="250ms"
+            delay={600}
           ></Card>
         </div>
       ) : (
