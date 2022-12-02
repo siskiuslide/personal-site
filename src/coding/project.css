@@ -17,10 +17,10 @@
   transform: scale(1.05);
   height: 600px;
 }
-.project:hover .screenshot {
-}
+
 .project:hover .description {
   margin-top: -20px;
+  margin-left: 10px;
 }
 .project > p {
   margin-left: 10px;
@@ -29,6 +29,11 @@
   margin-top: 10px;
   font-family: "oswald";
 }
+
+.controlProj:hover .description {
+  width: 75% !important;
+}
+
 .description {
   font-family: "signika negative";
   color: black;
@@ -39,6 +44,7 @@
   text-align: justify;
   padding-inline: 10px;
   padding-block: 5px;
+  margin-left: 10px;
   border-radius: 5px;
   transition: all 500ms;
 }

@@ -16,12 +16,13 @@ const Coding = function () {
           bg="paleblue"
           title="Project Car App"
           desc="An application designed for motoring enthusiasts to organize the ownership of their vehicles, track expenses and create to-do lists."
-          textWi="60%"
+          textWi="75%"
         ></Project>
         <Project
           bg="paleorange"
           title="Control"
           desc="A project that uses the MakerAPI to integrate with users' devices to allow remote control over smart-home devices"
+          textWi="60%"
         ></Project>
         <Project bg="palepurple" title="Smart Home Dashboards" textWi="75%"></Project>
         <Project></Project>
