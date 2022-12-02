@@ -48,3 +48,12 @@
   border-radius: 5px;
   transition: all 500ms;
 }
+
+@media screen and (max-width: 700px) {
+  .controlDescSection > .description {
+    width: 75% !important;
+  }
+  .controlButton {
+    display: none;
+  }
+}
