@@ -13,7 +13,12 @@
   /* testing colours*/
   --beigedarkertest: rgba(252, 234, 207, 0.877);
   --paleblue: #c6def9bc;
+  --palebluecont: #adcff5c8;
   --palegreen: #afd2b48e;
+  --palepurple: #d6cdea;
+  --paleorange: #fbd4ae;
+  --paleorangecont: #fddec0;
+  --paleblue: #cbe4f9;
   --darkamazongreen: #2c4530;
 }
 
