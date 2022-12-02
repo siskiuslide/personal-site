@@ -27,7 +27,7 @@
   font-style: italic;
   font-family: "Signika Negative";
   display: flex;
-  margin-top: 2em;
+  margin-top: 1em;
   color: var(--bistrebrown);
 }
 
@@ -199,6 +199,7 @@
     align-items: center;
     margin-bottom: 0;
   }
+
   .about {
     width: 800px;
     margin-inline: 0;

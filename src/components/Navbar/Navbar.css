@@ -22,9 +22,7 @@
   font-size: 1.25em;
 }
 
-.navbar > li:hover,
-.header > li:active {
-  color: black;
+.navbar > li > a:not(.activePage):hover {
   transform: translateY(0.3em);
   border-bottom: 3px solid var(--palegreen);
 }
