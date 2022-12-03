@@ -27,7 +27,7 @@
 }
 
 .projectList {
-  width: 45%;
+  width: 40%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
