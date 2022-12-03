@@ -1,0 +1,51 @@
+.tech {
+  width: 90px;
+  height: 25px;
+  background-color: white;
+  color: black;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.JS {
+  background: yellow;
+  letter-spacing: 0;
+  font-weight: 700;
+}
+.CSS {
+  background: #264de4;
+  color: white;
+  font-weight: 600;
+}
+.HTML {
+  background: #ffa500;
+  font-weight: 600;
+  color: white;
+}
+
+.MongoDB {
+  background: #00354c;
+  color: #00ed64;
+}
+.NodeJS {
+  color: white;
+  background: #65a059;
+  font-weight: 600;
+}
+
+.Express {
+  font-family: "Helvetica";
+  text-align: vertical-center;
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.React {
+  background: #282c34;
+  color: #61dafb;
+  font-weight: 700;
+}
