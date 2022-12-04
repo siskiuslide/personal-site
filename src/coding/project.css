@@ -4,8 +4,8 @@
 
 .project {
   width: 90%;
-  height: 270px;
-  margin-block: 1.3em;
+  height: 300px;
+  margin-block: 2rem;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -24,7 +24,7 @@
 .project > p {
   margin-left: 10px;
 }
-.title {
+.projecttitle {
   margin-top: 10px;
   font-family: "oswald";
   font-size: 35px;
@@ -38,10 +38,9 @@
 .description {
   font-family: "signika negative";
   color: black;
-  margin-bottom: 80px;
   margin-top: 10px;
   width: 80%;
-  font-size: 1.4em;
+  font-size: 2rem;
   text-align: justify;
   padding-inline: 10px;
   padding-block: 5px;
@@ -70,16 +69,16 @@
 .Smart {
   transition: opacity 400ms 1200ms;
 } */
-.Control > .title {
+.Control > .projecttitle {
   background: var(--peachGradient);
   color: white;
 }
 
-.Project > .title {
+.Project > .projecttitle {
   background: rgb(51, 153, 194);
 }
 
-.Smart > .title {
+.Smart > .projecttitle {
   background: #9370db;
 }
 @media screen and (max-width: 700px) {

@@ -39,12 +39,17 @@ const Home = function () {
     if (arrowIcon === "keyboard_arrow_down") {
       setArrowIcon("keyboard_arrow_up");
       setShowCards(true);
-      setBrowseClickedStyle({ transform: "translateY(-4em)", fontSize: "2em", animationIterationCount: "0" });
+      setBrowseClickedStyle({
+        transform: "translateY(-6rem)",
+        fontSize: "2.5rem",
+        marginBottom: "2rem",
+        animationIterationCount: "0",
+      });
       return;
     } else {
       setArrowIcon("keyboard_arrow_down");
       setShowCards(false);
-      setBrowseClickedStyle({ marginTop: "3em", fontSize: "2.5em", animationIterationCount: "infinite" });
+      setBrowseClickedStyle({ marginTop: "5rem", fontSize: "4rem", animationIterationCount: "infinite" });
     }
   };
   return (
@@ -57,7 +62,7 @@ const Home = function () {
               I'm Jake, a <span className="nounSpan">{noun}</span>
             </p>
             <p className="location">
-              <span className="material-icons" style={{ fontSize: "0.75em", paddingInline: "0.25em" }}>
+              <span className="material-icons" style={{ fontSize: "2.5rem", paddingInline: "0.25rem" }}>
                 location_on
               </span>
               Based in Warrington
@@ -70,7 +75,7 @@ const Home = function () {
         <div className="side side-2" style={fadeIn}>
           <div className="introduction">
             <div className="introText">
-              <p style={{ fontSize: "1.5em" }}>I'm a self-taught Web Developer.</p>
+              <p style={{ fontSize: "3rem" }}>I'm a self-taught Web Developer.</p>
               <p>
                 I create <b>useful</b> and <b>creative</b> web experiences for others who share the same interests as
                 me.

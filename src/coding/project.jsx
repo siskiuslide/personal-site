@@ -16,7 +16,7 @@ const Project = function (props) {
 
   return (
     <div className={"project " + props.title} style={styles}>
-      <p className="title">{props.title}</p>
+      <p className="projecttitle">{props.title}</p>
       <div className="techList">
         {props.techList.map((i) => (
           <Tech key={i} techName={i} />

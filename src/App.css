@@ -22,6 +22,8 @@
   --paleblue: #cbe4f9;
   --darkamazongreen: #2c4530;
   --peachGradient: linear-gradient(to left, #f2709c, #ff9472);
+
+  font-size: 10px;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");

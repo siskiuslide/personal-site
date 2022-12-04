@@ -3,12 +3,12 @@
   flex-direction: row;
   justify-content: center;
   margin-block: 0;
-  height: 4em;
+  height: 5rem;
   background-color: var(--darkamazongreen);
 }
 .navbar > li {
-  margin: 1em;
-  height: 2em;
+  margin: 1rem;
+  height: 2.5rem;
   padding-inline: 0.25em;
   list-style: none;
   text-decoration: none;
@@ -19,7 +19,7 @@
   text-decoration: none;
   color: white;
   font-weight: bolder;
-  font-size: 1.25em;
+  font-size: 2rem;
 }
 
 .navbar > li > a:not(.activePage):hover {
