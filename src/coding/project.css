@@ -11,7 +11,8 @@
   flex-direction: column;
   align-items: left;
   justify-content: start;
-  transition: all 500ms ease-in-out;
+  transition: opacity 400ms;
+  opacity: 0;
 }
 .project:hover {
   transform: scale(1.05);
@@ -58,6 +59,17 @@
   margin-left: 10px;
 }
 
+/* .Project {
+  transition: opacity 400ms 400ms;
+}
+
+.Control {
+  transition: opacity 400ms 800ms;
+}
+
+.Smart {
+  transition: opacity 400ms 1200ms;
+} */
 .Control > .title {
   background: var(--peachGradient);
   color: white;

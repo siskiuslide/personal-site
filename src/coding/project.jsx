@@ -5,8 +5,14 @@ import "./extras/controlButton.css";
 import Tech from "./extras/tech";
 
 const Project = function (props) {
-  console.log(props.techList);
-  const [styles, setStyles] = useState({ background: `var(--${props.bg})` });
+  const [styles, setStyles] = useState({
+    background: `var(--${props.bg})`,
+    transition: `height 500ms, opacity 400ms ${props.fadeInDelay}ms, transform 500ms`,
+  });
+  useEffect(() => {
+    console.log(props.fadeInDelay);
+    setStyles({ ...styles, opacity: 1 });
+  }, []);
 
   return (
     <div className={"project " + props.title} style={styles}>
