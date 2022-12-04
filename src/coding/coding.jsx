@@ -24,14 +24,14 @@ const Coding = function () {
           title="Control"
           desc="A project that uses the MakerAPI to integrate with users' devices to allow remote control over smart-home devices"
           techList={["HTML", "CSS", "JS", "MongoDB", "Express", "NodeJS"]}
-          fadeInDelay="800"
+          fadeInDelay="700"
         ></Project>
         <Project
           bg="palepurple"
           title="Smart Home Dashboards"
           desc="A collection of CSS templates designed to create an immersive smart-home experience. Designed in relation to the floorplan of my home, the templates allow customization of different nodes to make the floorplan interactive. "
           techList={["CSS"]}
-          fadeInDelay="1200"
+          fadeInDelay="1000"
         ></Project>
       </div>
     </>

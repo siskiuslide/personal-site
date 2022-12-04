@@ -7,7 +7,7 @@ import Tech from "./extras/tech";
 const Project = function (props) {
   const [styles, setStyles] = useState({
     background: `var(--${props.bg})`,
-    transition: `height 500ms, opacity 400ms ${props.fadeInDelay}ms, transform 500ms`,
+    transition: `height 500ms, opacity 600ms ${props.fadeInDelay}ms, transform 500ms`,
   });
   useEffect(() => {
     console.log(props.fadeInDelay);
