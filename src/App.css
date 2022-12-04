@@ -21,9 +21,14 @@
   --paleorangecont: #fddec0;
   --paleblue: #cbe4f9;
   --darkamazongreen: #2c4530;
+  --peachGradient: linear-gradient(to left, #f2709c, #ff9472);
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Signika+Negative:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0");
+
+.material-icons {
+  user-select: none;
+}

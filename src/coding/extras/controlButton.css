@@ -2,43 +2,44 @@
   background: white;
   border-radius: 4px;
   box-shadow: 0px 0px 5px 1px rgb(56, 56, 56);
-  margin: -30px 25px 50px 25px;
-  width: 150px;
-  height: 140px;
+  margin-top: -30px;
+  margin-left: 50px;
+
   cursor: pointer;
   color: black;
-  display: inline-flex;
+  display: flex;
+  opacity: 0;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  transition: all 750ms;
+  transition: all 550ms;
+  width: 200px;
+  height: 200px;
   position: relative;
 }
 
 .controlButton > h1 {
-  font-size: 16px;
+  font-size: 20px;
   width: 100%;
-  background: var(--palebluecont);
+  background: var(--peachGradient);
   /* background: purple; */
   margin-top: 0;
   padding-block: 3px;
   font-weight: bolder;
   text-align: center;
   align-self: center;
-  color: black;
+  color: white;
   justify-self: flex-start;
 }
 .statusIcon {
-  font-size: 3em;
+  font-size: 3.3em;
   justify-self: center;
   margin-top: -20px;
 }
 
 .project:hover .controlButton {
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  margin-left: 70px;
+  display: flex;
+  opacity: 1;
 }
 
 .project:hover .statusIcon {
@@ -50,16 +51,10 @@
 
 @media screen and (min-width: 1921px) {
   .controlButton {
-    transform: translate(580px, -120px);
   }
 }
 
 @media screen and (max-width: 1919px) {
-  .controlDescSection {
-    display: inline;
-  }
   .controlButton {
-    position: relative;
-    transform: translate(475px, -100px);
   }
 }

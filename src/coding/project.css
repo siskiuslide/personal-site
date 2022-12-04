@@ -27,12 +27,17 @@
   margin-top: 10px;
   font-family: "oswald";
   font-size: 35px;
+  width: auto;
+  margin-right: auto;
+  padding-inline: 10px;
+  border-radius: 5px;
+  color: white;
 }
 
 .description {
   font-family: "signika negative";
   color: black;
-  margin-bottom: auto;
+  margin-bottom: 80px;
   margin-top: 10px;
   width: 80%;
   font-size: 1.4em;
@@ -53,6 +58,18 @@
   margin-left: 10px;
 }
 
+.Control > .title {
+  background: var(--peachGradient);
+  color: white;
+}
+
+.Project > .title {
+  background: rgb(51, 153, 194);
+}
+
+.Smart > .title {
+  background: #9370db;
+}
 @media screen and (max-width: 700px) {
   .controlDescSection > .description {
     width: 75% !important;

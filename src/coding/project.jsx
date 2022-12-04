@@ -9,7 +9,7 @@ const Project = function (props) {
   const [styles, setStyles] = useState({ background: `var(--${props.bg})` });
 
   return (
-    <div className={props.title === "Control" ? "controlProj project" : "project"} style={styles}>
+    <div className={"project " + props.title} style={styles}>
       <p className="title">{props.title}</p>
       <div className="techList">
         {props.techList.map((i) => (
@@ -19,7 +19,7 @@ const Project = function (props) {
       <p className="description" style={{ background: `var(--${props.bg}cont)`, width: props.textWi }}>
         {props.desc}
       </p>
-      {/* {props.title === "Control" ? <ControlButton></ControlButton> : ""} */}
+      {props.title === "Control" ? <ControlButton></ControlButton> : ""}
       <div className="screenshot"></div>
     </div>
   );
