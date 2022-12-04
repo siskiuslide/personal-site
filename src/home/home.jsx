@@ -8,6 +8,7 @@ const Home = function () {
   const [showCards, setShowCards] = useState(false);
   const [browseClickedStyle, setBrowseClickedStyle] = useState();
   const [nounTimeout, setNounTimeout] = useState(5000);
+  const [fadeIn, setFadeIn] = useState({});
 
   useEffect(() => {
     setTimeout(() => {
@@ -26,6 +27,14 @@ const Home = function () {
     }, nounTimeout);
   }, [noun]);
 
+  useEffect(() => {
+    setTimeout(() => {
+      setFadeIn({
+        opacity: 1,
+      });
+    }, 200);
+  }, []);
+
   const browseHandler = function () {
     if (arrowIcon === "keyboard_arrow_down") {
       setArrowIcon("keyboard_arrow_up");
@@ -41,7 +50,7 @@ const Home = function () {
   return (
     <>
       <div className="welcomeFlex">
-        <div className="side side-1">
+        <div className="side side-1" style={fadeIn}>
           <div className="welcome">Welcome!</div>
           <div className="about">
             <p className="name">
@@ -56,9 +65,9 @@ const Home = function () {
           </div>
         </div>
         <div className="center">
-          <div className="centerImage"></div>
+          <div className="centerImage" style={fadeIn}></div>
         </div>
-        <div className="side side-2">
+        <div className="side side-2" style={fadeIn}>
           <div className="introduction">
             <div className="introText">
               <p style={{ fontSize: "1.5em" }}>I'm a self-taught Web Developer.</p>
@@ -91,7 +100,7 @@ const Home = function () {
         </div>
       </div>
 
-      <div className="browse" onClick={browseHandler} style={browseClickedStyle}>
+      <div className="browse" onClick={browseHandler} style={{ ...browseClickedStyle, opacity: 1 }}>
         Browse my work
         <span className="material-icons" style={{ marginInline: "1vw" }}>
           {arrowIcon}

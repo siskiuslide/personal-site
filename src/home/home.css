@@ -9,12 +9,16 @@
   height: 55vh;
 }
 .side-1 {
+  opacity: 0;
+  transition: all 400ms 400ms;
 }
 .side-2 {
   width: 30%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  opacity: 0;
+  transition: all 400ms 1200ms;
 }
 
 .center {
@@ -79,8 +83,10 @@
   background-size: contain;
   margin-inline: auto;
   border-radius: 50%;
-  border: 10px solid white;
+  border: 10px solid var(--palegreen);
   background-image: url("../images/snakewoodlandselfie.jpg");
+  opacity: 0;
+  transition: all 400ms 800ms;
 }
 
 .introduction {
@@ -128,13 +134,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all 500ms;
   cursor: pointer;
   color: var(--bistrebrown);
   animation-name: browse;
   animation-duration: 3s;
   animation-delay: 4s;
   animation-iteration-count: infinite;
+  opacity: 0;
+  transition: all 500ms;
 }
 
 .browse:hover > span {
