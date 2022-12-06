@@ -1,0 +1,108 @@
+.right-info {
+  position: absolute;
+  width: 2%;
+  height: 550px;
+  background: white;
+  margin-right: 0;
+  margin-left: 98%;
+  margin-top: 5%;
+  border-radius: 10px 0 0 10px;
+  background: var(--amazongreen);
+  transition: all 200ms;
+}
+
+.qualifications > p {
+  transform: rotate(-90deg) translate(-150px, 0px);
+  margin-left: 0;
+  font-size: 2.2rem;
+  font-weight: 500;
+  text-align: left;
+  color: white;
+  font-family: "Signika Negative";
+  transition: all 300ms;
+}
+
+.right-info:hover {
+  margin-left: 85%;
+  width: 15%;
+}
+.right-info:hover > .qualifications > p {
+  transform: rotate(0deg) translate(0, 0);
+  text-align: center;
+}
+.qualification-list {
+  display: none;
+}
+.right-info:hover .qualification-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-inline: 1rem;
+}
+.qualification-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  margin-block: 1rem;
+}
+
+object {
+  border: none;
+}
+.qual-image {
+  width: 25%;
+  height: auto;
+  margin-inline: 2px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  aspect-ratio: 1/1;
+  border: none;
+  outline: none;
+}
+.qual-1 > span {
+  background-image: url("../../images/codingandlogic.png");
+}
+.qual-2 > span {
+  background-image: url("../../images/cloudservices.png");
+}
+.qual-3 > span {
+  background-image: url("../../images/networking.png");
+}
+.qual-info-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+  margin-left: 5px;
+  width: 75%;
+  border-radius: 5px;
+}
+
+.qual-info-flex > * {
+  margin-block: 2px;
+  color: white;
+}
+.qual-issuer {
+  font-size: 1.2rem;
+}
+.qual-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.qual-info-footer {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  align-items: baseline;
+}
+.qual-info-footer > * {
+}
+.qual-date {
+  font-size: 1.2rem;
+}
+.qual-link {
+  color: white;
+  margin-inline: 1rem;
+}

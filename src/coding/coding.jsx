@@ -1,10 +1,12 @@
 import React from "react";
 import "./coding.css";
+import QualificationBanner from "./extras/QualificationBanner";
 import Project from "./project";
 
 const Coding = function () {
   return (
     <>
+      <QualificationBanner></QualificationBanner>
       <div className="intro">
         <p>
           Below is a collection of the programming projects I've led or contributed to so far. My expertise is
