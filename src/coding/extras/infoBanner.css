@@ -1,48 +1,61 @@
 .right-info {
   position: absolute;
   width: 2%;
-  height: 550px;
+  height: auto;
   background: white;
   margin-right: 0;
   margin-left: 98%;
-  margin-top: 5%;
+  margin-top: 3%;
   border-radius: 10px 0 0 10px;
   background: var(--amazongreen);
   transition: all 500ms;
+  box-shadow: 0px -2px 2px darkslategrey;
+  padding-block: 2rem;
 }
 
-.qualifications > p {
+.Qualifications-banner {
+  height: auto;
+}
+.Resources-banner {
+  height: auto;
+  margin-top: 400px;
+}
+
+.section > p {
   transform: rotate(-90deg) translate(-150px, 0px);
   margin-left: 0;
-  font-size: 2.2rem;
+  font-size: 2rem;
   font-weight: 500;
   text-align: left;
+  height: 20px;
+  margin-block: 5px;
   color: white;
   font-family: "Signika Negative";
   transition: all 600ms;
 }
 
 .right-info:hover {
-  margin-left: 85%;
-  width: 15%;
+  margin-left: 83%;
+  width: 17%;
 }
-.right-info:hover > .qualifications > p {
+.right-info:hover > .section > p {
   transform: rotate(0deg) translate(0, 0);
   text-align: center;
 }
-.qualification-list {
+.info-list {
   opacity: 0;
   width: 0px;
 }
-.right-info:hover .qualification-list {
+.right-info:hover .info-list {
   display: flex;
   opacity: 1;
   flex-direction: column;
   justify-content: space-between;
   margin-inline: 1rem;
   width: auto;
+  height: 100%;
 }
-.qualification-item {
+.info-item {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -52,7 +65,7 @@
   transition: all 400ms;
 }
 
-.right-info:hover .qualification-item {
+.right-info:hover .info-item {
   opacity: 1;
 }
 
@@ -116,17 +129,63 @@ object {
   margin-inline: 1rem;
 }
 
+.resources {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: auto;
+}
+.resource-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: start;
+  margin-bottom: 1rem;
+  background: var(--palegreen);
+  padding-inline: 1rem;
+  padding-block: 2.5rem;
+  border-radius: 5px;
+}
+
+.resource-item > * {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.resource-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  flex-wrap: wrap;
+}
+.resource-author {
+}
+.resource-techList {
+  margin-left: 0;
+  flex-wrap: wrap;
+}
+.resource-techList > * {
+  font-size: 1rem !important;
+  width: auto;
+  margin-top: 5px;
+}
+.resource-link {
+  margin-top: -10px;
+}
+
 @media screen and (min-width: 1921px) {
   .right-info:hover {
-    margin-left: 90%;
+    margin-left: 88%;
   }
-  .right-info:hover > .qualifications > p {
+  .Resources-banner {
+    margin-top: 400px;
+  }
+  .right-info:hover > .section > p {
     text-align: center;
     margin-inline: auto;
     transform: rotate(0deg) translate(-75px, 0px);
   }
-  .qualifications > p {
-    transform: rotate(-90deg) translate(-250px, 0px);
+  .section > p {
+    transform: rotate(-90deg) translate(-200px, 0px);
   }
   .qual-image {
     width: 20%;
