@@ -1,16 +1,21 @@
 import React from "react";
 import "./coding.css";
-import QualificationBanner from "./extras/QualificationBanner";
+import InfoBanner from "./extras/InfoBanner";
 import Project from "./project";
 
 const Coding = function () {
   return (
     <>
-      <QualificationBanner></QualificationBanner>
+      <InfoBanner title="Qualifications"></InfoBanner>
+      <InfoBanner title="Resources"></InfoBanner>
       <div className="intro">
         <p>
           Below is a collection of the programming projects I've led or contributed to so far. My expertise is
           JavaScript development with my skills ranging across the full MERN stack.
+        </p>
+        <p>
+          Once I have progressed with my React learning, I plan to start learning TypeScript as the language gaining
+          huge momentum within the software industry{" "}
         </p>
       </div>
       <div className="projectList">

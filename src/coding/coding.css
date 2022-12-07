@@ -2,6 +2,7 @@
   width: 40%;
   text-align: justify;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   margin-inline: auto;
   font-family: "signika negative";
@@ -14,7 +15,7 @@
 .intro > p {
   padding-inline: 2rem;
 }
-.intro > p::after {
+.intro > p:last-child::after {
   content: "";
   display: block;
   position: relative;
