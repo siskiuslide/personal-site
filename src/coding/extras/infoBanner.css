@@ -135,6 +135,9 @@ object {
   justify-content: space-between;
   height: auto;
 }
+.right-info:hover > .resource-item {
+  opacity: 1;
+}
 .resource-item {
   display: flex;
   flex-direction: column;
@@ -145,6 +148,8 @@ object {
   padding-inline: 1rem;
   padding-block: 2.5rem;
   border-radius: 5px;
+  opacity: 0;
+  transition: all 500ms;
 }
 
 .resource-item > * {

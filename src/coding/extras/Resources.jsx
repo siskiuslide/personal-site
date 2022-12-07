@@ -6,7 +6,7 @@ const Resources = function (props) {
     <>
       <p>{props.title}</p>
       <div className="info-list resources">
-        <div className="info-item resource-item resource-1">
+        <div className="info-item resource-item resource-1" style={{ transitionDelay: "200ms" }}>
           <div className="resource-title">React - The Complete Guide</div>
           <div className="resource-author">Maximilian Schwarzmüller</div>
           <div className="techList resource-techList" style={{ marginTop: "10px", fontSize: "1rem" }}>
@@ -21,7 +21,7 @@ const Resources = function (props) {
           </a>
         </div>
 
-        <div className="info-item resource-item resource-2">
+        <div className="info-item resource-item resource-2" style={{ transitionDelay: "400ms" }}>
           <div className="resource-title">NodeJS, Express, MongoDB & More</div>
           <div className="resource-author">Jonas Schmedtmann</div>
           <div className="techList resource-techList" style={{ marginTop: "10px", fontSize: "1rem" }}>
@@ -38,7 +38,7 @@ const Resources = function (props) {
           </a>
         </div>
 
-        <div className="info-item resource-item resource-3">
+        <div className="info-item resource-item resource-3" style={{ transitionDelay: "600ms" }}>
           <div className="resource-title">The Complete JavaScript Course</div>
           <div className="resource-author">Jonas Schmedtmann</div>
           <div className="techList resource-techList" style={{ marginTop: "10px", marginLeft: "0", fontSize: "1rem" }}>
