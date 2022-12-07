@@ -7,7 +7,7 @@ const QualificationBanner = function (props) {
       <div className="section qualifications">
         <p>Qualifications</p>
         <div className="qualification-list">
-          <div className="qualification-item qual-1">
+          <div className="qualification-item qual-1" style={{ transitionDelay: "200ms" }}>
             <span className="qual-image"></span>
             <div className="qual-info-flex">
               <p className="qual-issuer">City & Guilds</p>
@@ -26,7 +26,7 @@ const QualificationBanner = function (props) {
               </div>
             </div>
           </div>
-          <div className="qualification-item qual-2">
+          <div className="qualification-item qual-2" style={{ transitionDelay: "400ms" }}>
             <span className="qual-image"></span>
             <div className="qual-info-flex">
               <p className="qual-issuer">City & Guilds</p>
@@ -45,7 +45,7 @@ const QualificationBanner = function (props) {
               </div>
             </div>
           </div>
-          <div className="qualification-item qual-3">
+          <div className="qualification-item qual-3" style={{ transitionDelay: "600ms" }}>
             <span className="qual-image"></span>
             <div className="qual-info-flex">
               <p className="qual-issuer">City & Guilds</p>
