@@ -1,14 +1,18 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./coding.css";
 import InfoBanner from "./extras/InfoBanner";
 import Project from "./project";
 
 const Coding = function () {
+  const [introStyle, setIntroStyle] = useState({ opacity: 0, transition: "opacity 400ms 400ms" });
+  useEffect(() => {
+    setIntroStyle({ opacity: 1, transitionDelay: "275ms" });
+  }, []);
   return (
     <>
       <InfoBanner title="Qualifications"></InfoBanner>
       <InfoBanner title="Resources"></InfoBanner>
-      <div className="intro">
+      <div className="intro" style={introStyle}>
         <p>
           Below is a collection of the programming projects I've led or contributed to so far. My expertise is
           JavaScript development with my skills ranging across the full MERN stack.

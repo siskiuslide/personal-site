@@ -11,6 +11,7 @@
   background: var(--palegreen);
   margin-top: 2rem;
   border-radius: 10px;
+  transition: opacity 400ms;
 }
 .intro > p {
   padding-inline: 2rem;
