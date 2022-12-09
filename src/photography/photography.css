@@ -1,0 +1,26 @@
+.coming-soon {
+  font-size: 3rem;
+  background-color: var(--bistrebrown);
+  color: white;
+  font-family: "Signika Negative";
+  display: flex;
+  justify-content: center;
+  width: 400px;
+  padding-block: 10px;
+  margin-inline: auto;
+  transform: rotate();
+  border-radius: 5px;
+  margin-top: 10rem;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  height: 800px;
+}
+.gallery-item {
+  margin: 1rem;
+  background: var(--palegreen);
+  border-radius: 5px 5px 0 0;
+}

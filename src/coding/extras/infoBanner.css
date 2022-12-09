@@ -196,5 +196,27 @@ object {
     width: 20%;
   }
 }
-@keyframes qualifications {
+@keyframes info-banner-start {
+  0% {
+    margin-left: 100%;
+  }
+  50% {
+    margin-left: 97%;
+    width: 3%;
+  }
+  100% {
+    margin-left: 98%;
+    width: 2%;
+  }
+}
+
+@keyframes info-banner-hover {
+  0% {
+    margin-left: 98%;
+    width: 2%;
+  }
+  100% {
+    margin-left: 86%;
+    width: 14%;
+  }
 }

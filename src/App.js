@@ -3,6 +3,7 @@ import { Switch, Route, Redirect, BrowserRouter } from "react-router-dom";
 import Home from "./home/home";
 import Navbar from "./components/Navbar/Navbar";
 import Coding from "./coding/coding";
+import Photography from "./photography/photography";
 
 function App() {
   return (
@@ -18,7 +19,9 @@ function App() {
         <Coding></Coding>
       </Route>
       <Route path="/motoring"></Route>
-      <Route path="/photography"></Route>
+      <Route path="/photography">
+        <Photography />
+      </Route>
     </BrowserRouter>
   );
 }
