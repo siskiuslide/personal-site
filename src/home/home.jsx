@@ -77,8 +77,8 @@ const Home = function () {
             <div className="introText">
               <p style={{ fontSize: "3rem" }}>I'm a self-taught Web Developer.</p>
               <p>
-                I create <b>useful</b> and <b>creative</b> web experiences for others who share the same interests as
-                me.
+                I create <b className="introTextBold">useful</b> and <b className="introTextBold">creative</b> web
+                experiences for others who share the same interests as me.
               </p>
               <p>
                 Currently, I'm working on a React / NodeJS application designed to make project car ownership more
@@ -113,19 +113,31 @@ const Home = function () {
       </div>
       {showCards === true ? (
         <div className="cardFlex">
-          <Card title="Coding" desc="View my projects" dest="/coding" background="glaucousblue" delay={200}></Card>
+          <Card
+            title="Coding"
+            desc="View my projects"
+            dest="/coding"
+            style={{
+              background: "var(--glaucousblue)",
+            }}
+            delay={200}
+          ></Card>
           <Card
             title="Photography"
             desc="Browse galleries"
             dest="/Photography"
-            background="shadowblue"
+            style={{
+              background: "var(--tealaccent)",
+            }}
             delay={400}
           ></Card>
           <Card
             title="Motoring"
             desc="Look at my motoring updates"
             dest="/Motoring"
-            background="glaucousblue"
+            style={{
+              background: "var(--palebluecont)",
+            }}
             delay={600}
           ></Card>
         </div>

@@ -3,7 +3,7 @@ import React from "react";
 const Qualifications = function (props) {
   return (
     <>
-      <p>{props.title}</p>
+      <p>Qualifications</p>
       <div className="info-list">
         <div className="info-item qual-1" style={{ transitionDelay: "200ms" }}>
           <span className="qual-image"></span>

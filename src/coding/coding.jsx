@@ -10,8 +10,7 @@ const Coding = function () {
   }, []);
   return (
     <>
-      <InfoBanner title="Qualifications"></InfoBanner>
-      <InfoBanner title="Resources"></InfoBanner>
+      <InfoBanner></InfoBanner>
       <div className="intro" style={introStyle}>
         <p>
           Below is a collection of the programming projects I've led or contributed to so far. My expertise is
@@ -40,7 +39,7 @@ const Coding = function () {
         <Project
           bg="palepurple"
           title="Smart Home Dashboards"
-          desc="A collection of CSS templates designed to create an immersive smart-home experience. Designed in relation to the floorplan of my home, the templates allow customization of different nodes to make the floorplan interactive. "
+          desc="A collection of CSS templates designed to create an immersive smart-home experience when coupled with interactive dashboards. Designed in relation to the floorplan of my home."
           techList={["CSS"]}
           fadeInDelay="1000"
         ></Project>

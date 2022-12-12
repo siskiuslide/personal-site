@@ -3,7 +3,7 @@ import "./Card.css";
 import { Link } from "react-router-dom";
 
 const Card = function (props) {
-  const [cardStyle, setCardStyle] = useState({ background: `var(--${props.background})` });
+  const [cardStyle, setCardStyle] = useState({ ...props.style });
   const fadeIn = function () {
     setTimeout(() => {
       setCardStyle({ ...cardStyle, opacity: 1 });

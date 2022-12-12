@@ -1,27 +1,26 @@
 :root {
-  --background: #fdf4e3;
-  --beigedarker: rgba(243, 229, 207, 0.856);
+  background-color: var(--spaceblue);
 
-  --liftedBackground: rgb(210, 200, 200);
-  --amazongreen: #507255;
-  --amazongreenhover: #506955;
-  --middlegreen: #488b49;
-  --bistrebrown: #573524;
   --shadowblue: #8499b1;
   --glaucousblue: #5c80bc;
-  background-color: var(--background);
   /* testing colours*/
-  --beigedarkertest: rgba(252, 234, 207, 0.877);
-  --paleblue: #c6def9bc;
-  --palebluecont: #adcff5c8;
+  --paleblue: #b4c9e0bc;
+  --palebluecont: #9dcbffc8;
   --palegreen: #afd2b48e;
   --palepurple: #d6cdea;
   --palepurplecont: #eae0fd;
   --paleorange: #fbd4ae;
   --paleorangecont: #fddec0;
-  --paleblue: #cbe4f9;
+  --paleblue: #b9dfff;
   --darkamazongreen: #2c4530;
   --peachGradient: linear-gradient(to left, #f2709c, #ff9472);
+
+  /* new colour scheme test*/
+  --spaceblue: #0f172a;
+  --brightblueaccent: #a5fefa;
+  --darkblue: #0a101d;
+  --tealaccent: #5bbbb5;
+  --palebluecontlowopac: rgba(166, 206, 251, 0.249);
 
   font-size: 10px;
 }

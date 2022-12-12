@@ -5,7 +5,7 @@
   align-items: center;
   margin-block: 0;
   height: 6rem;
-  background-color: var(--darkamazongreen);
+  background-color: var(--darkblue);
 }
 .navbar > li {
   margin-inline: 1rem;
@@ -26,12 +26,12 @@
 
 .navbar > li > a:not(.activePage):hover {
   transform: translateY(0.3em);
-  border-bottom: 3px solid var(--palegreen);
+  border-bottom: 3px solid var(--brightblueaccent);
 }
 
 li > a.activePage {
 }
 .activePage {
-  border-bottom: 3px solid var(--palegreen);
+  border-bottom: 2px solid var(--brightblueaccent);
   color: white !important;
 }

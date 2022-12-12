@@ -24,7 +24,7 @@ const ProjectCarAppDetail = function () {
           style={{ color: "var(--glaucousblue)" }}
           href="https://developer-portal.driver-vehicle-licensing.api.gov.uk/apis/vehicle-enquiry-service/vehicle-enquiry-service-description.html#vehicle-enquiry-service-api"
         >
-          GOV Vehicle Enquiry API.
+          GOV Vehicle Enquiry API
         </a>
         which should allow the app to consume more concise data about users' vehicles, and set reminders for key dates
         such as MOT and Tax renewals automatically

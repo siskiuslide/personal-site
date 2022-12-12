@@ -1,26 +1,65 @@
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .coming-soon {
   font-size: 3rem;
-  background-color: var(--bistrebrown);
   color: white;
   font-family: "Signika Negative";
   display: flex;
   justify-content: center;
   width: 400px;
-  padding-block: 10px;
-  margin-inline: auto;
   transform: rotate();
   border-radius: 5px;
-  margin-top: 10rem;
+  padding-block: 1rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+.photography-specs {
+  margin-left: 3.5rem;
+  margin-block: 1rem;
+  width: 300px;
+  border-radius: 5px;
+}
+.photography-specs > * {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+.camera-type {
+  width: 100px;
+}
+.photography-specs > * > * {
+  font-size: 2rem;
+  font-family: "signika negative";
+  padding-inline: 1rem;
+}
+.spec {
+  color: white;
+  padding: 0.5rem;
 }
 
+.filler {
+  width: 300px;
+}
 .gallery-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   height: 800px;
+  margin-inline: 2rem;
 }
 .gallery-item {
-  margin: 1rem;
-  background: var(--palegreen);
+  margin: 1.5rem;
+  background: var(--glaucousblue);
   border-radius: 5px 5px 0 0;
+  transition: all 500ms;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
 }

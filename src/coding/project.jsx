@@ -10,12 +10,23 @@ const Project = function (props) {
     background: `var(--${props.bg})`,
     transition: `height 500ms, opacity 600ms ${props.fadeInDelay}ms, transform 500ms`,
   });
+
+  const [chevron, setChevron] = useState(true);
   useEffect(() => {
     setStyles({ ...styles, opacity: 1 });
   }, []);
 
   return (
-    <div className={"project " + props.title} style={styles}>
+    <div
+      className={"project " + props.title}
+      style={styles}
+      onMouseOver={() => {
+        setChevron(false);
+      }}
+      onMouseOut={() => {
+        setChevron(true);
+      }}
+    >
       <p className="projecttitle">{props.title}</p>
       <div className="techList">
         {props.techList.map((i) => (
@@ -25,6 +36,16 @@ const Project = function (props) {
       <p className="description" style={{ background: `var(--${props.bg}cont)`, width: props.textWi }}>
         {props.desc}
       </p>
+      {chevron ? (
+        <span
+          className="material-icons"
+          style={{ marginInline: "auto", fontSize: "3rem", marginBottom: "0", marginTop: "2rem" }}
+        >
+          expand_more
+        </span>
+      ) : (
+        ""
+      )}
       {/* control specific jsx */}
       {props.title === "Control" ? <ControlButton></ControlButton> : ""}
 

@@ -4,7 +4,7 @@ import Tech from "./tech";
 const Resources = function (props) {
   return (
     <>
-      <p>{props.title}</p>
+      <p>Resources</p>
       <div className="info-list resources">
         <div className="info-item resource-item resource-1" style={{ transitionDelay: "200ms" }}>
           <div className="resource-title">React - The Complete Guide</div>
