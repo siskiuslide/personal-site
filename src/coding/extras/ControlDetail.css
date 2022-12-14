@@ -1,0 +1,46 @@
+.project:hover .ControlDetail {
+  opacity: 1;
+  height: auto;
+}
+
+.ControlDetail {
+  opacity: 0;
+  transition: opacity 500ms;
+  height: 0;
+}
+.ControlDetail > .description {
+  font-size: 1.6rem;
+}
+.controlGrid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  grid-template-rows: 1fr 1.5fr;
+
+  grid-template-areas:
+    "a b"
+    "c b";
+}
+
+.controlGrid-column {
+  grid-column: 2/3;
+  grid-row: -3 / -1;
+  height: 100%;
+}
+
+.controlGrid-column >,
+.description {
+  text-align: left;
+}
+
+.controlGrid-column > .description > ul > li {
+  font-size: 1.5rem;
+  color: var(--brightblueaccent);
+}
+
+.controlGrid-column > .description > ul > li > p {
+  color: white !important;
+}
+
+.futureDev {
+  margin-block: 1rem;
+}

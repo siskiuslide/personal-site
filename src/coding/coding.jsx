@@ -15,12 +15,12 @@ const Coding = function () {
         <div className="intro" style={introStyle}>
           <p>
             Here is a collection of the programming projects I've led or contributed to so far. My expertise is
-            JavaScript development with my skills ranging across the full MERN stack.
+            JavaScript development with my skills ranging across the full <b>MERN</b> stack.{" "}
           </p>
 
           <p>
             My current focus is improving on my React knowledge. I'm learning how to write optimized code using advanced
-            techniques such as custom hooks, the Context API and managing complex state reducers{" "}
+            techniques such as custom Hooks, the Context API and managing complex State Reducers.{" "}
           </p>
           <p>
             Once I have progressed with my React learning, I plan to start learning TypeScript as the language gaining
@@ -38,7 +38,7 @@ const Coding = function () {
           <Project
             // bg="paleorange"
             title="Control"
-            desc="A project that uses the MakerAPI to integrate with users' devices to allow remote control over smart-home devices"
+            desc="A project that uses the MakerAPI to integrate with users' devices to allow remote control over smart-home devices."
             techList={["HTML", "CSS", "JS", "MongoDB", "Express", "NodeJS"]}
             fadeInDelay="700"
           ></Project>

@@ -11,12 +11,12 @@
   flex-direction: column;
   align-items: left;
   justify-content: start;
-  transition: all 400ms 200ms;
+  transition: all 400ms 150ms;
   opacity: 0;
   box-shadow: 3px 3px 6px var(--darkblue), -2px -2px var(--darkblue);
 }
 .project:hover {
-  transform: scale(1.05);
+  transform: scale(1.03);
   height: 700px;
 }
 .project:hover .description {

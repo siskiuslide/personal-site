@@ -1,6 +1,6 @@
 .intro {
-  width: 32%;
-  text-align: center;
+  width: 30%;
+  text-align: justify;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -19,7 +19,7 @@
   display: block;
   position: relative;
   width: 3px;
-  background: var(--brightblueaccent);
+  background: var(--darkblue);
   height: 500px;
   border-radius: 10px;
   margin-left: 105%;

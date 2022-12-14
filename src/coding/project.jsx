@@ -4,6 +4,7 @@ import "./project.css";
 import "./extras/controlButton.css";
 import Tech from "./extras/tech";
 import ProjectCarAppDetail from "./extras/ProjectCarAppDetail";
+import ControlDetail from "./extras/ControlDetail";
 
 const Project = function (props) {
   const [styles, setStyles] = useState({
@@ -47,12 +48,11 @@ const Project = function (props) {
         ""
       )}
       {/* control specific jsx */}
-      {props.title === "Control" ? <ControlButton></ControlButton> : ""}
+      {props.title === "Control" ? <ControlDetail></ControlDetail> : ""}
 
       {/* project car app specific jsx */}
 
       {props.title === "Project Car App" ? <ProjectCarAppDetail /> : <></>}
-      <div className="screenshot"></div>
     </div>
   );
 };
