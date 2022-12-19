@@ -9,11 +9,7 @@ import { useEffect } from "react";
 function App() {
   useEffect(() => {
     return (document.title = "Jake Whatling");
-<<<<<<< HEAD
   }, []);
-=======
-  });
->>>>>>> 6f994bf9c690d1918d3d215c3ac47c60e3723d33
   return (
     <BrowserRouter>
       <Navbar></Navbar>
