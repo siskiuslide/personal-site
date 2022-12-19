@@ -8,7 +8,7 @@ import { useEffect } from "react";
 
 function App() {
   useEffect(() => {
-    return (document.title = "Jake Whatling");
+    document.title = "Jake Whatling";
   }, []);
   return (
     <BrowserRouter>

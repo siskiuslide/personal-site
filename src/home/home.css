@@ -259,6 +259,43 @@
     margin-inline: 20px;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .welcome {
+    font-size: 5rem;
+  }
+  .about > * {
+    text-align: center;
+    font-size: 2.3rem;
+  }
+  .centerImage {
+    width: 240px;
+    height: 240px;
+  }
+  .side-2 {
+    text-align: center;
+  }
+  .introduction {
+    width: auto;
+    margin-inline: auto;
+  }
+  .contactSection {
+    margin-inline: auto;
+    margin-top: 6rem;
+  }
+  .contact {
+    justify-content: center;
+  }
+
+  .cardFlex {
+    flex-direction: column;
+    margin-inline: auto;
+  }
+  .browse {
+    font-size: 3rem !important;
+    margin-top: 0;
+  }
+}
 @keyframes browse {
   0% {
     margin-top: 50px;

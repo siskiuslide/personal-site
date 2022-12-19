@@ -35,3 +35,18 @@ li > a.activePage {
   border-bottom: 2px solid var(--brightblueaccent);
   color: white !important;
 }
+
+@media (max-width: 600px) {
+  .navbar {
+    width: 100vw;
+    justify-content: start;
+    margin-left: 0;
+    padding-inline: 0.25rem;
+  }
+  .navbar > li {
+    margin-inline: 0.5rem;
+  }
+  .navbar > li > a {
+    font-size: 1.6rem;
+  }
+}
