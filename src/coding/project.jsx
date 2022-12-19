@@ -5,6 +5,7 @@ import "./extras/controlButton.css";
 import Tech from "./extras/tech";
 import ProjectCarAppDetail from "./extras/ProjectCarAppDetail";
 import ControlDetail from "./extras/ControlDetail";
+import DashboardDetail from "./extras/DashboardDetail";
 
 const Project = function (props) {
   const [styles, setStyles] = useState({
@@ -53,6 +54,7 @@ const Project = function (props) {
       {/* project car app specific jsx */}
 
       {props.title === "Project Car App" ? <ProjectCarAppDetail /> : <></>}
+      {props.title === "Smart Home Dashboards" ? <DashboardDetail /> : <></>}
     </div>
   );
 };

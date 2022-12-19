@@ -20,7 +20,7 @@ const Photography = function () {
         <div className="filler"></div>
       </div>
       <div className="gallery-grid">
-        <GalleryItem />
+        <GalleryItem imageUrl="/l" title="Snake Woodland" date="13/12/2022" />
         <GalleryItem />
         <GalleryItem />
         <GalleryItem />

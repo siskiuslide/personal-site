@@ -6,6 +6,7 @@ const ControlButton = function (props) {
     status: "on",
     class: "material-icons",
     style: {
+      color: props.color,
       textShadow: "2px 2px 0px black, -2px -2px 0px black, -2px 2px 0px black, 2px -2px 0px black",
     },
   });
@@ -35,7 +36,7 @@ const ControlButton = function (props) {
   return (
     <div className="controlButton">
       <h1>{props.deviceName}</h1>
-      <div className={"statusIcon material-icons"} style={{ ...bulbo.style }} onClick={bulboHandler}>
+      <div className={"statusIcon material-icons"} style={bulbo.style} onClick={bulboHandler}>
         {props.icon}
       </div>
       <div className="footer"></div>

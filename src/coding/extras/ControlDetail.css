@@ -27,9 +27,17 @@
   height: 100%;
 }
 
-.controlGrid-column >,
-.description {
+.controlGrid-column > .description {
   text-align: left;
+}
+.controlGrid-column > .description > ul {
+  padding-block: 0.1rem;
+  width: 50%;
+  border-radius: 5px;
+}
+
+.peach {
+  background: var(--peachGradientLowO);
 }
 
 .controlGrid-column > .description > ul > li {
@@ -43,4 +51,5 @@
 
 .futureDev {
   margin-block: 1rem;
+  padding-block: 1rem;
 }

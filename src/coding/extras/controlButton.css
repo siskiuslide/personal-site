@@ -34,7 +34,7 @@
 .statusIcon {
   font-size: 3.3em;
   justify-self: center;
-  color: white;
+  /* color: white; */
 }
 
 .project:hover .controlButton {

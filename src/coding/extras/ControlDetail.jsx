@@ -22,7 +22,7 @@ const ControlDetail = function () {
         <div className="controlGrid-column">
           <p className="description">
             Useful features:
-            <ul>
+            <ul className="peach">
               <li>
                 <p>User Authentication</p>
               </li>
@@ -35,7 +35,7 @@ const ControlDetail = function () {
             </ul>
           </p>
           <p className="description">Future Development:</p>
-          <p className="description futureDev" style={{ fontSize: "1.6rem" }}>
+          <p className="description futureDev peach" style={{ fontSize: "1.6rem" }}>
             Rebuild the frontend using React. The frontend logic to manage devices can be rather complex. React would
             streamline the UI.
           </p>

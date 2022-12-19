@@ -1,0 +1,10 @@
+.DashboardDetail {
+  opacity: 0;
+  height: 0;
+  transition: all 500ms;
+}
+
+.project:hover > .DashboardDetail {
+  height: auto;
+  opacity: 1;
+}
