@@ -4,8 +4,12 @@ import Home from "./home/home";
 import Navbar from "./components/Navbar/Navbar";
 import Coding from "./coding/coding";
 import Photography from "./photography/photography";
+import { useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+    return (document.title = "Jake Whatling");
+  }, []);
   return (
     <BrowserRouter>
       <Navbar></Navbar>
